@@ -17,7 +17,7 @@ module "aws-functions" {
 policy "check-ec2-environment-tag" {
   source = "./check-ec2-environment-tag.sentinel"
 #  enforcement_level = "advisory"
-   enforcement_level = "soft-mandatory"
+   enforcement_level = "hard-mandatory"
 }
 
 policy "enforce-mandatory-tags" {
